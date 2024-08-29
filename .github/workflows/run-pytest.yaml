@@ -50,6 +50,7 @@ jobs:
           pip install --upgrade tox setuptools
           pip list
           pip install pymysql
+          pip install pytest
 
       - name: Run tests
         run: python -m pytest
