@@ -29,6 +29,10 @@ jobs:
         run: |
           docker run -p 2881:2881  -e MODE=slim -e OB_SYS_PASSWORD=123456  -e OB_TENANT_PASSWORD=123456 -d oceanbase/oceanbase-ce
 
+      - name: Sleep for 120 seconds
+        run: sleep 120s
+        shell: bash
+
       - name: Checkout repo
         uses: actions/checkout@v4
 
