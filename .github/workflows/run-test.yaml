@@ -92,7 +92,7 @@ jobs:
 
       - name: start ob docker
         run: |
-          docker run -p 2881:2881  -e MODE=slim -e OB_SYS_PASSWORD=123456  -e OB_TENANT_PASSWORD=123456 oceanbase/oceanbase-ce
+          docker run -p 2881:2881  -e MODE=slim -e OB_SYS_PASSWORD=123456  -e OB_TENANT_PASSWORD=123456 oceanbase/oceanbase-ce -d
 
       - name: Set up python
         uses: actions/setup-python@v5
