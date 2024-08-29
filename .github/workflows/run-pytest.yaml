@@ -52,5 +52,5 @@ jobs:
           pip install pymysql
 
       - name: Run tests
-        run: pytest
+        run: python -m pytest
 
