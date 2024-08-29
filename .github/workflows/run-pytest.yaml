@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - "rel_*"
       # branches used to test the workflow
       - "workflow_test_*"
     paths-ignore:
