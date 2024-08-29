@@ -51,6 +51,7 @@ jobs:
           pip list
           pip install pymysql
           pip install pytest
+          pip install typing_extensions
 
       - name: Run tests
         run: python -m pytest
