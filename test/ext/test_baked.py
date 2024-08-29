@@ -206,7 +206,7 @@ class LikeQueryTest(BakedTest):
 
         assert_raises_message(
             orm_exc.MultipleResultsFound,
-            "Multiple rows were found when exactly one was required",
+            "Multiple rows were found when exactly one was required.",
             bq(fixture_session()).one,
         )
 
