@@ -27,7 +27,7 @@ jobs:
     steps:
       - name: start ob docker
         run: |
-          docker run -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -d mysql
+          docker run -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -d mysql:5.7
 
       - name: Sleep for 120 seconds
         run: sleep 120s
